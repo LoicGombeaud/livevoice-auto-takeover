@@ -4,7 +4,7 @@
   "description": "Allow LiveVoice web app to automatically take over when requested remotely",
   "version": "1.0",
   "action": {
-    "default_popup": "popup/livevoice.html",
+    "default_popup": "popup/popup.html",
     "default_icon": "images/icon.png"
   },
   "icons": {
