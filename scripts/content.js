@@ -15,8 +15,12 @@ function acceptTakeover() {
 
 function takeoverIfRequested() {
   if (isTakeoverRequested()) {
-    acceptTakeover();
-    console.log("Takeover accepted!");
+    chrome.storage.local.get(['autoTakeoverEnabled']).then((result) => {
+      if (result.autoTakeoverEnabled) {
+        acceptTakeover();
+        console.log("Takeover accepted!");
+      }
+    });
   }
 }
 

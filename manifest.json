@@ -18,5 +18,8 @@
       "js": ["scripts/content.js"],
       "matches": ["https://livevoice.io/*"]
     }
+  ],
+  "permissions": [
+    "storage"
   ]
 }
