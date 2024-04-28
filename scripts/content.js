@@ -25,8 +25,6 @@ function takeoverIfRequested() {
 }
 
 setInterval(
-  () => {
-    takeoverIfRequested();
-  },
+  takeoverIfRequested,
   1000
 )
