@@ -5,7 +5,7 @@ function getAcceptButton() {
   return acceptButton;
 }
 
-function isAcceptButtonVisible() {
+function isTakeoverRequested() {
   return getAcceptButton().checkVisibility();
 }
 
@@ -14,16 +14,11 @@ function acceptTakeover() {
 }
 
 function takeoverIfRequested() {
-  console.log("Checking if takeover required...");
-  if (isAcceptButtonVisible()) {
+  if (isTakeoverRequested()) {
     acceptTakeover();
     console.log("Takeover accepted!");
   }
-  else {
-    console.log("No takeover requested.");
-  }
 }
-
 
 setInterval(
   () => {
